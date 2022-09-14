@@ -39,7 +39,7 @@ const Coin = () => {
             </div>
             <div className="coin-price">
               {coin.market_data ? (
-                <h1>{coin.market_data.current_price.usd}</h1>
+                <h1>{coin.market_data.current_price}</h1>
               ) : null}
             </div>
           </div>

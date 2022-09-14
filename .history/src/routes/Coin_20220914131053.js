@@ -39,7 +39,7 @@ const Coin = () => {
             </div>
             <div className="coin-price">
               {coin.market_data ? (
-                <h1>{coin.market_data.current_price.usd}</h1>
+                <h1>{coin.market_data.current_price}</h1>
               ) : null}
             </div>
           </div>
@@ -77,7 +77,7 @@ const Coin = () => {
               </div>
               <div className="row">
                 <h4>24 Hour High</h4>
-                {coin.market_data?.high_24h ? <p>{coin.market_data.high_24h.usd}</p> : null}
+                {coin.market_data?._24h ? <p>{coin.market_data.high_24h.usd}</p> : null}
               </div>
             </div>
             <div className="right">
@@ -96,7 +96,7 @@ const Coin = () => {
         <div className="content">
           <div className="about">
             <h3>About</h3>
-            <p>{coin.decription ?  coin.description.en : ''}</p>
+            <p>{coin.description.en}</p>
           </div>
         </div>
       </div>
