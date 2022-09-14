@@ -23,7 +23,7 @@ function App() {
 
   return (
     <>
-      <Coins coins={coins}/>
+      <Coins coins={}/>
     </>
   );
 }
