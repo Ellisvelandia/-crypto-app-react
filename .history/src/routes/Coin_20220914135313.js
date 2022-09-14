@@ -143,7 +143,7 @@ const Coin = () => {
               <div className="row">
                 <h4>Market Cap</h4>
                 {coin.market_data?.market_cap ? (
-                  <p>${coin.market_data.market_cap.usd.toLocaleString()}</p>
+                  <p>{coin.market_data.market_cap.usd}</p>
                 ) : null}
               </div>
               <div className="row">
