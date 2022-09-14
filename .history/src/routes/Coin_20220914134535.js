@@ -36,11 +36,11 @@ const Coin = () => {
             <div className="coin-heading">
               {coin.image ? <img src={coin.image.small} alt="" /> : null}
               <p>{coin.name}</p>
-              {coin.symbol ? <p>{coin.symbol.toUpperCase()}/USD</p> : null}
+              {coin.symbol}<p></p>
             </div>
             <div className="coin-price">
               {coin.market_data?.current_price ? (
-                <h1>{coin.market_data.current_price.usd.toLocaleString()}</h1>
+                <h1>{coin.market_data.current_price.usd}</h1>
               ) : null}
             </div>
           </div>
@@ -60,62 +60,49 @@ const Coin = () => {
             <tbody>
               <tr>
                 <td>
-                  {coin.market_data?.price_change_percentage_1h_in_currency ? (
+                  {coin.market_data?.price_change_percentage_1h_in_currrency ? (
                     <p>
-                      {coin.market_data.price_change_percentage_1h_in_currency.usd.toFixed(
-                        1
-                      )}
-                      %
+                      {coin.data.price_change_percentage_1h_in_currrency.usd}
                     </p>
                   ) : null}
                 </td>
                 <td>
-                  {coin.market_data?.price_change_percentage_24h_in_currency ? (
+                  {coin.market_data
+                    ?.price_change_percentage_24h_in_currrency ? (
                     <p>
-                      {coin.market_data.price_change_percentage_24h_in_currency.usd.toFixed(
-                        1
-                      )}
-                      %
+                      {coin.data.price_change_percentage_24h_in_currrency.usd}
                     </p>
                   ) : null}
                 </td>
                 <td>
-                  {coin.market_data?.price_change_percentage_24h_in_currency ? (
+                  {coin.market_data
+                    ?.price_change_percentage_24h_in_currrency ? (
                     <p>
-                      {coin.market_data.price_change_percentage_7d_in_currency.usd.toFixed(
-                        1
-                      )}
-                      %
+                      {coin.data.price_change_percentage_7d_in_currrency.usd}
                     </p>
                   ) : null}
                 </td>
                 <td>
-                  {coin.market_data?.price_change_percentage_24h_in_currency ? (
+                  {coin.market_data
+                    ?.price_change_percentage_24h_in_currrency ? (
                     <p>
-                      {coin.market_data.price_change_percentage_14d_in_currency.usd.toFixed(
-                        1
-                      )}
-                      %
+                      {coin.data.price_change_percentage_14d_in_currrency.usd}
                     </p>
                   ) : null}
                 </td>
                 <td>
-                  {coin.market_data?.price_change_percentage_24h_in_currency ? (
+                  {coin.market_data
+                    ?.price_change_percentage_24h_in_currrency ? (
                     <p>
-                      {coin.market_data.price_change_percentage_30d_in_currency.usd.toFixed(
-                        1
-                      )}
-                      %
+                      {coin.data.price_change_percentage_30d_in_currrency.usd}
                     </p>
                   ) : null}
                 </td>
                 <td>
-                  {coin.market_data?.price_change_percentage_24h_in_currency ? (
+                  {coin.market_data
+                    ?.price_change_percentage_14h_in_currrency ? (
                     <p>
-                      {coin.market_data.price_change_percentage_1y_in_currency.usd.toFixed(
-                        1
-                      )}
-                      %
+                      {coin.data.price_change_percentage_1y_in_currrency.usd}
                     </p>
                   ) : null}
                 </td>
