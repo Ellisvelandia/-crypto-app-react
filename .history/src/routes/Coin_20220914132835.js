@@ -94,7 +94,7 @@ const Coin = () => {
         <div className="content">
           <div className="about">
             <h3>About</h3>
-            <p>{coin.description ? coin.description.en : ''}</p>
+            <p>{p>
           </div>
         </div>
       </div>

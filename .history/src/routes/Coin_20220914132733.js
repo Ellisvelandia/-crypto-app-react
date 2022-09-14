@@ -59,9 +59,9 @@ const Coin = () => {
               <td>{coin.market_data?.price_change_percentage_1h_in_currrency ? <p>{coin.data.price_change_percentage_1h_in_currrency.usd}</p> : null}</td>
               <td>{coin.market_data?.price_change_percentage_24h_in_currrency ? <p>{coin.data.price_change_percentage_24h_in_currrency.usd}</p> : null}</td>
               <td>{coin.market_data?.price_change_percentage_24h_in_currrency ? <p>{coin.data.price_change_percentage_7d_in_currrency.usd}</p> : null}</td>
-              <td>{coin.market_data?.price_change_percentage_24h_in_currrency ? <p>{coin.data.price_change_percentage_14d_in_currrency.usd}</p> : null}</td>
-              <td>{coin.market_data?.price_change_percentage_24h_in_currrency ? <p>{coin.data.price_change_percentage_30d_in_currrency.usd}</p> : null}</td>
-              <td>{coin.market_data?.price_change_percentage_14h_in_currrency ? <p>{coin.data.price_change_percentage_1y_in_currrency.usd}</p> : null}</td>
+              <td>{coin.market_data?.price_change_percentage_14d_in_currrency ? <p>{coin.data.price_change_percentage_14d_in_currrency.usd}</p> : null}</td>
+              <td>{coin.market_data?.price_change_percentage_30d_in_currrency ? <p>{coin.data.price_change_percentage_30d_in_currrency.usd}</p> : null}</td>
+              <td>{coin.market_data?.price_change_percentage_1y_in_currrency ? <p>{coin.data.price_change_percentage_1y_in_currrency.usd}</p> : null}</td>
               </tr>
             </tbody>
           </table>
@@ -94,7 +94,7 @@ const Coin = () => {
         <div className="content">
           <div className="about">
             <h3>About</h3>
-            <p>{coin.description ? coin.description.en : ''}</p>
+            <p>{coin.decription ?  coin.description.en : ''}</p>
           </div>
         </div>
       </div>
