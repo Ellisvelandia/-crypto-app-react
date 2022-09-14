@@ -24,8 +24,8 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <Coins coins={coins} />
+    <Navbar/>
+      <Coins coins={coins}/>
     </>
   );
 }

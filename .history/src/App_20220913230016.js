@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 import Coins from "./components/Coins";
-import Navbar from "./components/Navbar";
 
 function App() {
   const [coins, setCoins] = useState([]);
@@ -24,8 +23,8 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <Coins coins={coins} />
+    <Navbar/>
+      <Coins coins={coins}/>
     </>
   );
 }
