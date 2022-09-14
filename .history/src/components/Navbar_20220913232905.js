@@ -5,7 +5,7 @@ import { FaCoins } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <Link to="/">
+    <Link to>
       <div className="navbar">
         <FaCoins className="icon" />
         <h1>
